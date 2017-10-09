@@ -37,11 +37,21 @@ public class TestHeap {
 		
 		
 		//for inserting a new element in the heap
-		int[] A = {100,20,30,1,5,10,15,68,99};
+		/*int[] A = {100,20,30,1,5,10,15,68,99};
 		int heapSize = 7;
 		MaxHeap mh = new MaxHeap(A,heapSize);
 		mh.insert(A, 63);
 		for(int i = 0; i <heapSize+1;i++){
+			System.out.println(A[i]);
+		}
+		*/
+		
+		//for heapSorting
+		int[] A = {100,20,30,10,15,7,16};
+		int heapSize = A.length;
+		MaxHeap mh = new MaxHeap(A,heapSize);
+		mh.heapSort();
+		for(int i = 0; i <heapSize;i++){
 			System.out.println(A[i]);
 		}
 	}

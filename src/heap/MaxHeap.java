@@ -96,6 +96,17 @@ public class MaxHeap {
 	}
 	
 	
+	//heapSort
+	public void heapSort(){
+		this.buildMaxHeap();
+		for(int i = A.length-1; i >=1;i--){
+			this.swap(A, i, 0);
+			heapSize = heapSize -1;
+			this.MaxHeapify(A, 0);
+		}
+	}
+	
+	
 	
 	
 	
